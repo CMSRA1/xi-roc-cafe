@@ -1,0 +1,2 @@
+              component     nevt nevt_sumw
+ SMS_T1tttt_madgraphMLM 31135695  31135695

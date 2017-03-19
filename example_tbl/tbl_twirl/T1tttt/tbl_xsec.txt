@@ -1,0 +1,2 @@
+              component xsec
+ SMS_T1tttt_madgraphMLM    1

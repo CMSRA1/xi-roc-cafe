@@ -18,8 +18,6 @@ log_handler.setFormatter(log_formatter)
 logger.addHandler(log_handler)
 
 ##__________________________________________________________________||
-utilspy_path = os.path.join(os.path.dirname(os.path.dirname(__file__)), 'utilspy')
-sys.path.insert(1, utilspy_path)
 from parallel import build_parallel
 from profile_func import profile_func
 

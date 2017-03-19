@@ -1,0 +1,89 @@
+                    component depth     class                                 name     pass    total
+   QCD_HT100to200_madgraphMLM     1 LambdaStr          "ev : ev.cutflowId[0] == 1" 19270218 19286149
+   QCD_HT100to200_madgraphMLM     1 LambdaStr     "ev : ev.nIsoTracksVeto[0] <= 0" 18596526 19270218
+   QCD_HT100to200_madgraphMLM     1 LambdaStr             "ev : ev.nJet40[0] >= 2" 18596526 18596526
+   QCD_HT100to200_madgraphMLM     1 LambdaStr             "ev : ev.ht40[0] >= 200"   143135 18596526
+   QCD_HT100to200_madgraphMLM     1 LambdaStr            "ev : ev.nJet100[0] >= 1"    74021   143135
+   QCD_HT100to200_madgraphMLM     1 LambdaStr     "ev : ev.nJet40failedId[0] == 0"    74021    74021
+   QCD_HT100to200_madgraphMLM     1 LambdaStr          "ev : ev.nJet40Fwd[0] == 0"    67934    74021
+   QCD_HT100to200_madgraphMLM     1 LambdaStr    "ev : -2.5 < ev.jet_eta[0] < 2.5"    61429    67934
+   QCD_HT100to200_madgraphMLM     1 LambdaStr "ev : 0.1 <= ev.jet_chHEF[0] < 0.95"    59451    61429
+   QCD_HT100to200_madgraphMLM     1 LambdaStr         "ev : 130 <= ev.mht40_pt[0]"      229    59451
+   QCD_HT100to200_madgraphMLM     1 LambdaStr       "ev : ev.MhtOverMet[0] < 1.25"       11      229
+   QCD_HT200to300_madgraphMLM     1 LambdaStr          "ev : ev.cutflowId[0] == 1" 15214055 15246227
+   QCD_HT200to300_madgraphMLM     1 LambdaStr     "ev : ev.nIsoTracksVeto[0] <= 0" 14603437 15214055
+   QCD_HT200to300_madgraphMLM     1 LambdaStr             "ev : ev.nJet40[0] >= 2" 14603437 14603437
+   QCD_HT200to300_madgraphMLM     1 LambdaStr             "ev : ev.ht40[0] >= 200"  4558049 14603437
+   QCD_HT200to300_madgraphMLM     1 LambdaStr            "ev : ev.nJet100[0] >= 1"  3257402  4558049
+   QCD_HT200to300_madgraphMLM     1 LambdaStr     "ev : ev.nJet40failedId[0] == 0"  3257402  3257402
+   QCD_HT200to300_madgraphMLM     1 LambdaStr          "ev : ev.nJet40Fwd[0] == 0"  3159946  3257402
+   QCD_HT200to300_madgraphMLM     1 LambdaStr    "ev : -2.5 < ev.jet_eta[0] < 2.5"  2873897  3159946
+   QCD_HT200to300_madgraphMLM     1 LambdaStr "ev : 0.1 <= ev.jet_chHEF[0] < 0.95"  2803273  2873897
+   QCD_HT200to300_madgraphMLM     1 LambdaStr         "ev : 130 <= ev.mht40_pt[0]"     2288  2803273
+   QCD_HT200to300_madgraphMLM     1 LambdaStr       "ev : ev.MhtOverMet[0] < 1.25"       23     2288
+   QCD_HT300to500_madgraphMLM     1 LambdaStr          "ev : ev.cutflowId[0] == 1" 16140545 16194932
+   QCD_HT300to500_madgraphMLM     1 LambdaStr     "ev : ev.nIsoTracksVeto[0] <= 0" 15466000 16140545
+   QCD_HT300to500_madgraphMLM     1 LambdaStr             "ev : ev.nJet40[0] >= 2" 15466000 15466000
+   QCD_HT300to500_madgraphMLM     1 LambdaStr             "ev : ev.ht40[0] >= 200" 14236584 15466000
+   QCD_HT300to500_madgraphMLM     1 LambdaStr            "ev : ev.nJet100[0] >= 1" 13090704 14236584
+   QCD_HT300to500_madgraphMLM     1 LambdaStr     "ev : ev.nJet40failedId[0] == 0" 13090704 13090704
+   QCD_HT300to500_madgraphMLM     1 LambdaStr          "ev : ev.nJet40Fwd[0] == 0" 11731722 13090704
+   QCD_HT300to500_madgraphMLM     1 LambdaStr    "ev : -2.5 < ev.jet_eta[0] < 2.5" 10791711 11731722
+   QCD_HT300to500_madgraphMLM     1 LambdaStr "ev : 0.1 <= ev.jet_chHEF[0] < 0.95" 10536829 10791711
+   QCD_HT300to500_madgraphMLM     1 LambdaStr         "ev : 130 <= ev.mht40_pt[0]"    36233 10536829
+   QCD_HT300to500_madgraphMLM     1 LambdaStr       "ev : ev.MhtOverMet[0] < 1.25"      808    36233
+   QCD_HT500to700_madgraphMLM     1 LambdaStr          "ev : ev.cutflowId[0] == 1" 18988113 19085974
+   QCD_HT500to700_madgraphMLM     1 LambdaStr     "ev : ev.nIsoTracksVeto[0] <= 0" 18192055 18988113
+   QCD_HT500to700_madgraphMLM     1 LambdaStr             "ev : ev.nJet40[0] >= 2" 18192055 18192055
+   QCD_HT500to700_madgraphMLM     1 LambdaStr             "ev : ev.ht40[0] >= 200" 18179128 18192055
+   QCD_HT500to700_madgraphMLM     1 LambdaStr            "ev : ev.nJet100[0] >= 1" 18156355 18179128
+   QCD_HT500to700_madgraphMLM     1 LambdaStr     "ev : ev.nJet40failedId[0] == 0" 18156355 18156355
+   QCD_HT500to700_madgraphMLM     1 LambdaStr          "ev : ev.nJet40Fwd[0] == 0" 15878646 18156355
+   QCD_HT500to700_madgraphMLM     1 LambdaStr    "ev : -2.5 < ev.jet_eta[0] < 2.5" 14975122 15878646
+   QCD_HT500to700_madgraphMLM     1 LambdaStr "ev : 0.1 <= ev.jet_chHEF[0] < 0.95" 14582323 14975122
+   QCD_HT500to700_madgraphMLM     1 LambdaStr         "ev : 130 <= ev.mht40_pt[0]"   129739 14582323
+   QCD_HT500to700_madgraphMLM     1 LambdaStr       "ev : ev.MhtOverMet[0] < 1.25"    16181   129739
+  QCD_HT700to1000_madgraphMLM     1 LambdaStr          "ev : ev.cutflowId[0] == 1" 15499126 15601892
+  QCD_HT700to1000_madgraphMLM     1 LambdaStr     "ev : ev.nIsoTracksVeto[0] <= 0" 14857020 15499126
+  QCD_HT700to1000_madgraphMLM     1 LambdaStr             "ev : ev.nJet40[0] >= 2" 14857020 14857020
+  QCD_HT700to1000_madgraphMLM     1 LambdaStr             "ev : ev.ht40[0] >= 200" 14856904 14857020
+  QCD_HT700to1000_madgraphMLM     1 LambdaStr            "ev : ev.nJet100[0] >= 1" 14856678 14856904
+  QCD_HT700to1000_madgraphMLM     1 LambdaStr     "ev : ev.nJet40failedId[0] == 0" 14856678 14856678
+  QCD_HT700to1000_madgraphMLM     1 LambdaStr          "ev : ev.nJet40Fwd[0] == 0" 13392540 14856678
+  QCD_HT700to1000_madgraphMLM     1 LambdaStr    "ev : -2.5 < ev.jet_eta[0] < 2.5" 12959316 13392540
+  QCD_HT700to1000_madgraphMLM     1 LambdaStr "ev : 0.1 <= ev.jet_chHEF[0] < 0.95" 12580241 12959316
+  QCD_HT700to1000_madgraphMLM     1 LambdaStr         "ev : 130 <= ev.mht40_pt[0]"   240741 12580241
+  QCD_HT700to1000_madgraphMLM     1 LambdaStr       "ev : ev.MhtOverMet[0] < 1.25"    62630   240741
+ QCD_HT1000to1500_madgraphMLM     1 LambdaStr          "ev : ev.cutflowId[0] == 1"  4938683  4978167
+ QCD_HT1000to1500_madgraphMLM     1 LambdaStr     "ev : ev.nIsoTracksVeto[0] <= 0"  4736111  4938683
+ QCD_HT1000to1500_madgraphMLM     1 LambdaStr             "ev : ev.nJet40[0] >= 2"  4736111  4736111
+ QCD_HT1000to1500_madgraphMLM     1 LambdaStr             "ev : ev.ht40[0] >= 200"  4736110  4736111
+ QCD_HT1000to1500_madgraphMLM     1 LambdaStr            "ev : ev.nJet100[0] >= 1"  4736109  4736110
+ QCD_HT1000to1500_madgraphMLM     1 LambdaStr     "ev : ev.nJet40failedId[0] == 0"  4736109  4736109
+ QCD_HT1000to1500_madgraphMLM     1 LambdaStr          "ev : ev.nJet40Fwd[0] == 0"  4359138  4736109
+ QCD_HT1000to1500_madgraphMLM     1 LambdaStr    "ev : -2.5 < ev.jet_eta[0] < 2.5"  4314595  4359138
+ QCD_HT1000to1500_madgraphMLM     1 LambdaStr "ev : 0.1 <= ev.jet_chHEF[0] < 0.95"  4175055  4314595
+ QCD_HT1000to1500_madgraphMLM     1 LambdaStr         "ev : 130 <= ev.mht40_pt[0]"   182327  4175055
+ QCD_HT1000to1500_madgraphMLM     1 LambdaStr       "ev : ev.MhtOverMet[0] < 1.25"    68385   182327
+ QCD_HT1500to2000_madgraphMLM     1 LambdaStr          "ev : ev.cutflowId[0] == 1"  3810751  3845502
+ QCD_HT1500to2000_madgraphMLM     1 LambdaStr     "ev : ev.nIsoTracksVeto[0] <= 0"  3655824  3810751
+ QCD_HT1500to2000_madgraphMLM     1 LambdaStr             "ev : ev.nJet40[0] >= 2"  3655824  3655824
+ QCD_HT1500to2000_madgraphMLM     1 LambdaStr             "ev : ev.ht40[0] >= 200"  3655824  3655824
+ QCD_HT1500to2000_madgraphMLM     1 LambdaStr            "ev : ev.nJet100[0] >= 1"  3655824  3655824
+ QCD_HT1500to2000_madgraphMLM     1 LambdaStr     "ev : ev.nJet40failedId[0] == 0"  3655824  3655824
+ QCD_HT1500to2000_madgraphMLM     1 LambdaStr          "ev : ev.nJet40Fwd[0] == 0"  3404116  3655824
+ QCD_HT1500to2000_madgraphMLM     1 LambdaStr    "ev : -2.5 < ev.jet_eta[0] < 2.5"  3400828  3404116
+ QCD_HT1500to2000_madgraphMLM     1 LambdaStr "ev : 0.1 <= ev.jet_chHEF[0] < 0.95"  3273690  3400828
+ QCD_HT1500to2000_madgraphMLM     1 LambdaStr         "ev : 130 <= ev.mht40_pt[0]"   299085  3273690
+ QCD_HT1500to2000_madgraphMLM     1 LambdaStr       "ev : ev.MhtOverMet[0] < 1.25"   141854   299085
+  QCD_HT2000toInf_madgraphMLM     1 LambdaStr          "ev : ev.cutflowId[0] == 1"  1940632  1959823
+  QCD_HT2000toInf_madgraphMLM     1 LambdaStr     "ev : ev.nIsoTracksVeto[0] <= 0"  1859744  1940632
+  QCD_HT2000toInf_madgraphMLM     1 LambdaStr             "ev : ev.nJet40[0] >= 2"  1859744  1859744
+  QCD_HT2000toInf_madgraphMLM     1 LambdaStr             "ev : ev.ht40[0] >= 200"  1859744  1859744
+  QCD_HT2000toInf_madgraphMLM     1 LambdaStr            "ev : ev.nJet100[0] >= 1"  1859744  1859744
+  QCD_HT2000toInf_madgraphMLM     1 LambdaStr     "ev : ev.nJet40failedId[0] == 0"  1859744  1859744
+  QCD_HT2000toInf_madgraphMLM     1 LambdaStr          "ev : ev.nJet40Fwd[0] == 0"  1745987  1859744
+  QCD_HT2000toInf_madgraphMLM     1 LambdaStr    "ev : -2.5 < ev.jet_eta[0] < 2.5"  1745902  1745987
+  QCD_HT2000toInf_madgraphMLM     1 LambdaStr "ev : 0.1 <= ev.jet_chHEF[0] < 0.95"  1662180  1745902
+  QCD_HT2000toInf_madgraphMLM     1 LambdaStr         "ev : 130 <= ev.mht40_pt[0]"   264438  1662180
+  QCD_HT2000toInf_madgraphMLM     1 LambdaStr       "ev : ev.MhtOverMet[0] < 1.25"   149802   264438
