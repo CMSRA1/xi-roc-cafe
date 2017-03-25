@@ -17,6 +17,9 @@ def write_to_file(tbl, path):
 def custom_pd_read_table(path, dtype = { }):
     """
 
+    read a data frame from a file with all columns as categories
+    unless other types are specified.
+
     dtype : e.g., {'n': float, 'nvar': float}
 
     """
