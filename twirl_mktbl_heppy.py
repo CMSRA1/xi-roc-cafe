@@ -23,7 +23,6 @@ parser.add_argument("--data", action = "store_const", dest = 'datamc', const = '
 parser.add_argument('-i', '--heppydir', default = default_heppydir, help = 'Heppy results dir')
 parser.add_argument('-c', '--components', default = None, nargs = '*', help = 'the list of components')
 parser.add_argument('-o', '--outdir', default = os.path.join('tbl', 'out'))
-parser.add_argument("--tbl-pu-corr-path", help = "path to the table of the PU corrections, MC only")
 parser.add_argument('--susy-sms', action = 'store_true', default = False, help = 'whether running on SUSY SMS')
 parser.add_argument('-n', '--nevents', default = -1, type = int, help = 'maximum number of events to process for each component')
 parser.add_argument('--max-events-per-process', default = -1, type = int, help = 'maximum number of events per process')
