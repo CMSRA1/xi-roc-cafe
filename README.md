@@ -84,3 +84,9 @@ Analyze the data frames:
 ```
 
 This will print the ROC for two variables xi and minOmegaTilde against QCD and two mass points of T1tttt in bins of HT and njets.
+
+## Links
+
+* https://indico.cern.ch/event/590196/contributions/2380011/
+* https://indico.cern.ch/event/384920/contributions/1813060/
+* https://indico.cern.ch/event/388468/sessions/160219/#20150421
