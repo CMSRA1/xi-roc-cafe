@@ -24,12 +24,12 @@ source /cvmfs/cms.cern.ch/cmsset_default.sh
 Check out `cmsenv` if it is not done yet.
 ```bash
 export SCRAM_ARCH=slc6_amd64_gcc530
-cmsrel CMSSW_8_0_26
+cmsrel CMSSW_8_0_28
 ```
 
 Enter the `cmsenv`:
 ```bash
-cd CMSSW_8_0_26/src/
+cd CMSSW_8_0_28/src/
 cmsenv
 cd ../../
 ```
