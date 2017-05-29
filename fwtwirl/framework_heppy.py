@@ -3,11 +3,7 @@ import os
 import sys
 import logging
 
-import ROOT
-
 import alphatwirl
-
-ROOT.gROOT.SetBatch(1)
 
 ##__________________________________________________________________||
 import logging
@@ -43,6 +39,7 @@ class FrameworkHeppy(object):
                  datamc = 'mc',
                  force = False, quiet = False,
                  parallel_mode = 'multiprocessing',
+                 htcondor_job_desc_extra = [ ],
                  process = 8,
                  user_modules = (),
                  max_events_per_dataset = -1, max_events_per_process = -1,
@@ -52,7 +49,8 @@ class FrameworkHeppy(object):
             parallel_mode = parallel_mode,
             quiet = quiet,
             processes = process,
-            user_modules = user_modules
+            user_modules = user_modules,
+            htcondor_job_desc_extra = htcondor_job_desc_extra
         )
         self.outdir = outdir
         self.heppydir = heppydir
@@ -71,8 +69,13 @@ class FrameworkHeppy(object):
     ):
 
         self._begin()
-        loop = self._configure(components, reader_collector_pairs, analyzerName, fileName, treeName)
-        self._run(loop)
+        try:
+            loop = self._configure(components, reader_collector_pairs, analyzerName, fileName, treeName)
+            self._run(loop)
+        except KeyboardInterrupt:
+            logger = logging.getLogger(__name__)
+            logger.warning('received KeyboardInterrupt')
+            pass
         self._end()
 
     def _begin(self):
@@ -140,7 +143,7 @@ class FrameworkHeppy(object):
             treeName = treeName,
         )
         datasetIntoEventBuildersSplitter = alphatwirl.loop.DatasetIntoEventBuildersSplitter(
-            EventBuilder = alphatwirl.heppyresult.BEventBuilder,
+            EventBuilder = alphatwirl.heppyresult.EventBuilder,
             eventBuilderConfigMaker = eventBuilderConfigMaker,
             maxEvents = self.max_events_per_dataset,
             maxEventsPerRun = self.max_events_per_process
