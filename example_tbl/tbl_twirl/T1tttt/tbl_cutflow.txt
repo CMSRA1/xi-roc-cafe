@@ -1,67 +1,67 @@
-              component depth                  class                                                     name     pass    total
- SMS_T1tttt_madgraphMLM     1 EventSelectionAllCount                                                      All     9181 30799443
- SMS_T1tttt_madgraphMLM     2              LambdaStr "ev : ev.componentName[0] == \"SMS_T1tttt_madgraphMLM\"" 30799443 30799443
- SMS_T1tttt_madgraphMLM     2 EventSelectionAnyCount                                                      Any     9181 30799443
- SMS_T1tttt_madgraphMLM     3 EventSelectionAllCount                                                      All     3950 30799443
- SMS_T1tttt_madgraphMLM     4              LambdaStr                            "ev : ev.smsmass1[0] == 1300"   768345 30799443
- SMS_T1tttt_madgraphMLM     4              LambdaStr                            "ev : ev.smsmass2[0] == 1050"    39074   768345
- SMS_T1tttt_madgraphMLM     4 EventSelectionAllCount                                                      All     3950    39074
- SMS_T1tttt_madgraphMLM     5              LambdaStr                              "ev : ev.cutflowId[0] == 1"    17325    39074
- SMS_T1tttt_madgraphMLM     5              LambdaStr                         "ev : ev.nIsoTracksVeto[0] <= 0"    13578    17325
- SMS_T1tttt_madgraphMLM     5              LambdaStr                                 "ev : ev.nJet40[0] >= 2"    13578    13578
- SMS_T1tttt_madgraphMLM     5              LambdaStr                                 "ev : ev.ht40[0] >= 200"    12089    13578
- SMS_T1tttt_madgraphMLM     5              LambdaStr                                "ev : ev.nJet100[0] >= 1"     8902    12089
- SMS_T1tttt_madgraphMLM     5              LambdaStr                         "ev : ev.nJet40failedId[0] == 0"     8902     8902
- SMS_T1tttt_madgraphMLM     5              LambdaStr                              "ev : ev.nJet40Fwd[0] == 0"     8047     8902
- SMS_T1tttt_madgraphMLM     5              LambdaStr                        "ev : -2.5 < ev.jet_eta[0] < 2.5"     7875     8047
- SMS_T1tttt_madgraphMLM     5              LambdaStr                     "ev : 0.1 <= ev.jet_chHEF[0] < 0.95"     7688     7875
- SMS_T1tttt_madgraphMLM     5              LambdaStr                             "ev : 130 <= ev.mht40_pt[0]"     4708     7688
- SMS_T1tttt_madgraphMLM     5              LambdaStr                           "ev : ev.MhtOverMet[0] < 1.25"     3950     4708
- SMS_T1tttt_madgraphMLM     3 EventSelectionAllCount                                                      All     5231 30795493
- SMS_T1tttt_madgraphMLM     4              LambdaStr                            "ev : ev.smsmass1[0] == 1800"   496136 30795493
- SMS_T1tttt_madgraphMLM     4              LambdaStr                             "ev : ev.smsmass2[0] == 500"    19085   496136
- SMS_T1tttt_madgraphMLM     4 EventSelectionAllCount                                                      All     5231    19085
- SMS_T1tttt_madgraphMLM     5              LambdaStr                              "ev : ev.cutflowId[0] == 1"     7536    19085
- SMS_T1tttt_madgraphMLM     5              LambdaStr                         "ev : ev.nIsoTracksVeto[0] <= 0"     6119     7536
- SMS_T1tttt_madgraphMLM     5              LambdaStr                                 "ev : ev.nJet40[0] >= 2"     6119     6119
- SMS_T1tttt_madgraphMLM     5              LambdaStr                                 "ev : ev.ht40[0] >= 200"     6119     6119
- SMS_T1tttt_madgraphMLM     5              LambdaStr                                "ev : ev.nJet100[0] >= 1"     6119     6119
- SMS_T1tttt_madgraphMLM     5              LambdaStr                         "ev : ev.nJet40failedId[0] == 0"     6119     6119
- SMS_T1tttt_madgraphMLM     5              LambdaStr                              "ev : ev.nJet40Fwd[0] == 0"     5628     6119
- SMS_T1tttt_madgraphMLM     5              LambdaStr                        "ev : -2.5 < ev.jet_eta[0] < 2.5"     5627     5628
- SMS_T1tttt_madgraphMLM     5              LambdaStr                     "ev : 0.1 <= ev.jet_chHEF[0] < 0.95"     5532     5627
- SMS_T1tttt_madgraphMLM     5              LambdaStr                             "ev : 130 <= ev.mht40_pt[0]"     5358     5532
- SMS_T1tttt_madgraphMLM     5              LambdaStr                           "ev : ev.MhtOverMet[0] < 1.25"     5231     5358
- SMS_T1tttt_madgraphMLM     1 EventSelectionAllCount                                                      All        0 30790262
- SMS_T1tttt_madgraphMLM     2              LambdaStr   "ev : ev.componentName[0] == \"SMS_T2bb_madgraphMLM\""        0 30790262
- SMS_T1tttt_madgraphMLM     2 EventSelectionAnyCount                                                      Any        0        0
- SMS_T1tttt_madgraphMLM     3 EventSelectionAllCount                                                      All        0        0
- SMS_T1tttt_madgraphMLM     4              LambdaStr                             "ev : ev.smsmass1[0] == 500"        0        0
- SMS_T1tttt_madgraphMLM     4              LambdaStr                             "ev : ev.smsmass2[0] == 450"        0        0
- SMS_T1tttt_madgraphMLM     4 EventSelectionAllCount                                                      All        0        0
- SMS_T1tttt_madgraphMLM     5              LambdaStr                              "ev : ev.cutflowId[0] == 1"        0        0
- SMS_T1tttt_madgraphMLM     5              LambdaStr                         "ev : ev.nIsoTracksVeto[0] <= 0"        0        0
- SMS_T1tttt_madgraphMLM     5              LambdaStr                                 "ev : ev.nJet40[0] >= 2"        0        0
- SMS_T1tttt_madgraphMLM     5              LambdaStr                                 "ev : ev.ht40[0] >= 200"        0        0
- SMS_T1tttt_madgraphMLM     5              LambdaStr                                "ev : ev.nJet100[0] >= 1"        0        0
- SMS_T1tttt_madgraphMLM     5              LambdaStr                         "ev : ev.nJet40failedId[0] == 0"        0        0
- SMS_T1tttt_madgraphMLM     5              LambdaStr                              "ev : ev.nJet40Fwd[0] == 0"        0        0
- SMS_T1tttt_madgraphMLM     5              LambdaStr                        "ev : -2.5 < ev.jet_eta[0] < 2.5"        0        0
- SMS_T1tttt_madgraphMLM     5              LambdaStr                     "ev : 0.1 <= ev.jet_chHEF[0] < 0.95"        0        0
- SMS_T1tttt_madgraphMLM     5              LambdaStr                             "ev : 130 <= ev.mht40_pt[0]"        0        0
- SMS_T1tttt_madgraphMLM     5              LambdaStr                           "ev : ev.MhtOverMet[0] < 1.25"        0        0
- SMS_T1tttt_madgraphMLM     3 EventSelectionAllCount                                                      All        0        0
- SMS_T1tttt_madgraphMLM     4              LambdaStr                            "ev : ev.smsmass1[0] == 1000"        0        0
- SMS_T1tttt_madgraphMLM     4              LambdaStr                             "ev : ev.smsmass2[0] == 300"        0        0
- SMS_T1tttt_madgraphMLM     4 EventSelectionAllCount                                                      All        0        0
- SMS_T1tttt_madgraphMLM     5              LambdaStr                              "ev : ev.cutflowId[0] == 1"        0        0
- SMS_T1tttt_madgraphMLM     5              LambdaStr                         "ev : ev.nIsoTracksVeto[0] <= 0"        0        0
- SMS_T1tttt_madgraphMLM     5              LambdaStr                                 "ev : ev.nJet40[0] >= 2"        0        0
- SMS_T1tttt_madgraphMLM     5              LambdaStr                                 "ev : ev.ht40[0] >= 200"        0        0
- SMS_T1tttt_madgraphMLM     5              LambdaStr                                "ev : ev.nJet100[0] >= 1"        0        0
- SMS_T1tttt_madgraphMLM     5              LambdaStr                         "ev : ev.nJet40failedId[0] == 0"        0        0
- SMS_T1tttt_madgraphMLM     5              LambdaStr                              "ev : ev.nJet40Fwd[0] == 0"        0        0
- SMS_T1tttt_madgraphMLM     5              LambdaStr                        "ev : -2.5 < ev.jet_eta[0] < 2.5"        0        0
- SMS_T1tttt_madgraphMLM     5              LambdaStr                     "ev : 0.1 <= ev.jet_chHEF[0] < 0.95"        0        0
- SMS_T1tttt_madgraphMLM     5              LambdaStr                             "ev : 130 <= ev.mht40_pt[0]"        0        0
- SMS_T1tttt_madgraphMLM     5              LambdaStr                           "ev : ev.MhtOverMet[0] < 1.25"        0        0
+              component depth     class                                                     name     pass    total
+ SMS_T1tttt_madgraphMLM     1 AllwCount                                                      All     9181 30799443
+ SMS_T1tttt_madgraphMLM     2 LambdaStr "ev : ev.componentName[0] == \"SMS_T1tttt_madgraphMLM\"" 30799443 30799443
+ SMS_T1tttt_madgraphMLM     2 AnywCount                                                      Any     9181 30799443
+ SMS_T1tttt_madgraphMLM     3 AllwCount                                                      All     3950 30799443
+ SMS_T1tttt_madgraphMLM     4 LambdaStr                            "ev : ev.smsmass1[0] == 1300"   768345 30799443
+ SMS_T1tttt_madgraphMLM     4 LambdaStr                            "ev : ev.smsmass2[0] == 1050"    39074   768345
+ SMS_T1tttt_madgraphMLM     4 AllwCount                                                      All     3950    39074
+ SMS_T1tttt_madgraphMLM     5 LambdaStr                              "ev : ev.cutflowId[0] == 1"    17325    39074
+ SMS_T1tttt_madgraphMLM     5 LambdaStr                         "ev : ev.nIsoTracksVeto[0] <= 0"    13578    17325
+ SMS_T1tttt_madgraphMLM     5 LambdaStr                                 "ev : ev.nJet40[0] >= 2"    13578    13578
+ SMS_T1tttt_madgraphMLM     5 LambdaStr                                 "ev : ev.ht40[0] >= 200"    12089    13578
+ SMS_T1tttt_madgraphMLM     5 LambdaStr                                "ev : ev.nJet100[0] >= 1"     8902    12089
+ SMS_T1tttt_madgraphMLM     5 LambdaStr                         "ev : ev.nJet40failedId[0] == 0"     8902     8902
+ SMS_T1tttt_madgraphMLM     5 LambdaStr                              "ev : ev.nJet40Fwd[0] == 0"     8047     8902
+ SMS_T1tttt_madgraphMLM     5 LambdaStr                        "ev : -2.5 < ev.jet_eta[0] < 2.5"     7875     8047
+ SMS_T1tttt_madgraphMLM     5 LambdaStr                     "ev : 0.1 <= ev.jet_chHEF[0] < 0.95"     7688     7875
+ SMS_T1tttt_madgraphMLM     5 LambdaStr                             "ev : 130 <= ev.mht40_pt[0]"     4708     7688
+ SMS_T1tttt_madgraphMLM     5 LambdaStr                           "ev : ev.MhtOverMet[0] < 1.25"     3950     4708
+ SMS_T1tttt_madgraphMLM     3 AllwCount                                                      All     5231 30795493
+ SMS_T1tttt_madgraphMLM     4 LambdaStr                            "ev : ev.smsmass1[0] == 1800"   496136 30795493
+ SMS_T1tttt_madgraphMLM     4 LambdaStr                             "ev : ev.smsmass2[0] == 500"    19085   496136
+ SMS_T1tttt_madgraphMLM     4 AllwCount                                                      All     5231    19085
+ SMS_T1tttt_madgraphMLM     5 LambdaStr                              "ev : ev.cutflowId[0] == 1"     7536    19085
+ SMS_T1tttt_madgraphMLM     5 LambdaStr                         "ev : ev.nIsoTracksVeto[0] <= 0"     6119     7536
+ SMS_T1tttt_madgraphMLM     5 LambdaStr                                 "ev : ev.nJet40[0] >= 2"     6119     6119
+ SMS_T1tttt_madgraphMLM     5 LambdaStr                                 "ev : ev.ht40[0] >= 200"     6119     6119
+ SMS_T1tttt_madgraphMLM     5 LambdaStr                                "ev : ev.nJet100[0] >= 1"     6119     6119
+ SMS_T1tttt_madgraphMLM     5 LambdaStr                         "ev : ev.nJet40failedId[0] == 0"     6119     6119
+ SMS_T1tttt_madgraphMLM     5 LambdaStr                              "ev : ev.nJet40Fwd[0] == 0"     5628     6119
+ SMS_T1tttt_madgraphMLM     5 LambdaStr                        "ev : -2.5 < ev.jet_eta[0] < 2.5"     5627     5628
+ SMS_T1tttt_madgraphMLM     5 LambdaStr                     "ev : 0.1 <= ev.jet_chHEF[0] < 0.95"     5532     5627
+ SMS_T1tttt_madgraphMLM     5 LambdaStr                             "ev : 130 <= ev.mht40_pt[0]"     5358     5532
+ SMS_T1tttt_madgraphMLM     5 LambdaStr                           "ev : ev.MhtOverMet[0] < 1.25"     5231     5358
+ SMS_T1tttt_madgraphMLM     1 AllwCount                                                      All        0 30790262
+ SMS_T1tttt_madgraphMLM     2 LambdaStr   "ev : ev.componentName[0] == \"SMS_T2bb_madgraphMLM\""        0 30790262
+ SMS_T1tttt_madgraphMLM     2 AnywCount                                                      Any        0        0
+ SMS_T1tttt_madgraphMLM     3 AllwCount                                                      All        0        0
+ SMS_T1tttt_madgraphMLM     4 LambdaStr                             "ev : ev.smsmass1[0] == 500"        0        0
+ SMS_T1tttt_madgraphMLM     4 LambdaStr                             "ev : ev.smsmass2[0] == 450"        0        0
+ SMS_T1tttt_madgraphMLM     4 AllwCount                                                      All        0        0
+ SMS_T1tttt_madgraphMLM     5 LambdaStr                              "ev : ev.cutflowId[0] == 1"        0        0
+ SMS_T1tttt_madgraphMLM     5 LambdaStr                         "ev : ev.nIsoTracksVeto[0] <= 0"        0        0
+ SMS_T1tttt_madgraphMLM     5 LambdaStr                                 "ev : ev.nJet40[0] >= 2"        0        0
+ SMS_T1tttt_madgraphMLM     5 LambdaStr                                 "ev : ev.ht40[0] >= 200"        0        0
+ SMS_T1tttt_madgraphMLM     5 LambdaStr                                "ev : ev.nJet100[0] >= 1"        0        0
+ SMS_T1tttt_madgraphMLM     5 LambdaStr                         "ev : ev.nJet40failedId[0] == 0"        0        0
+ SMS_T1tttt_madgraphMLM     5 LambdaStr                              "ev : ev.nJet40Fwd[0] == 0"        0        0
+ SMS_T1tttt_madgraphMLM     5 LambdaStr                        "ev : -2.5 < ev.jet_eta[0] < 2.5"        0        0
+ SMS_T1tttt_madgraphMLM     5 LambdaStr                     "ev : 0.1 <= ev.jet_chHEF[0] < 0.95"        0        0
+ SMS_T1tttt_madgraphMLM     5 LambdaStr                             "ev : 130 <= ev.mht40_pt[0]"        0        0
+ SMS_T1tttt_madgraphMLM     5 LambdaStr                           "ev : ev.MhtOverMet[0] < 1.25"        0        0
+ SMS_T1tttt_madgraphMLM     3 AllwCount                                                      All        0        0
+ SMS_T1tttt_madgraphMLM     4 LambdaStr                            "ev : ev.smsmass1[0] == 1000"        0        0
+ SMS_T1tttt_madgraphMLM     4 LambdaStr                             "ev : ev.smsmass2[0] == 300"        0        0
+ SMS_T1tttt_madgraphMLM     4 AllwCount                                                      All        0        0
+ SMS_T1tttt_madgraphMLM     5 LambdaStr                              "ev : ev.cutflowId[0] == 1"        0        0
+ SMS_T1tttt_madgraphMLM     5 LambdaStr                         "ev : ev.nIsoTracksVeto[0] <= 0"        0        0
+ SMS_T1tttt_madgraphMLM     5 LambdaStr                                 "ev : ev.nJet40[0] >= 2"        0        0
+ SMS_T1tttt_madgraphMLM     5 LambdaStr                                 "ev : ev.ht40[0] >= 200"        0        0
+ SMS_T1tttt_madgraphMLM     5 LambdaStr                                "ev : ev.nJet100[0] >= 1"        0        0
+ SMS_T1tttt_madgraphMLM     5 LambdaStr                         "ev : ev.nJet40failedId[0] == 0"        0        0
+ SMS_T1tttt_madgraphMLM     5 LambdaStr                              "ev : ev.nJet40Fwd[0] == 0"        0        0
+ SMS_T1tttt_madgraphMLM     5 LambdaStr                        "ev : -2.5 < ev.jet_eta[0] < 2.5"        0        0
+ SMS_T1tttt_madgraphMLM     5 LambdaStr                     "ev : 0.1 <= ev.jet_chHEF[0] < 0.95"        0        0
+ SMS_T1tttt_madgraphMLM     5 LambdaStr                             "ev : 130 <= ev.mht40_pt[0]"        0        0
+ SMS_T1tttt_madgraphMLM     5 LambdaStr                           "ev : ev.MhtOverMet[0] < 1.25"        0        0
