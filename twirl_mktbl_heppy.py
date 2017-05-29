@@ -90,7 +90,7 @@ def configure_scribblers_before_event_selection():
     scribblers.extend(scr_)
 
     if args.susy_sms:
-        from scribblers.SMSMass import SMSMass
+        from scribblers.heppy import SMSMass
         scr_ = [
             SMSMass(),
         ]
@@ -258,7 +258,7 @@ def run(reader_collector_pairs):
         parallel_mode = args.parallel_mode,
         htcondor_job_desc_extra = htcondor_job_desc_extra,
         process = args.process,
-        user_modules = ('scribblers'),
+        user_modules = ('scribblers', ),
         max_events_per_dataset = args.nevents,
         max_events_per_process = args.max_events_per_process,
         profile = args.profile,
