@@ -1,6 +1,24 @@
 # Tai Sakuma <tai.sakuma@cern.ch>
 
 ##__________________________________________________________________||
+class ComponentName(object):
+
+    def __repr__(self):
+        return '{}()'.format(
+            self.__class__.__name__,
+        )
+
+    def begin(self, event):
+        self.vals = [ ]
+        event.componentName = self.vals
+
+        self.vals[:] = [event.component.name]
+        # e.g., "HTMHT_Run2015D_PromptReco_25ns"
+
+    def event(self, event):
+        event.componentName = self.vals
+
+##__________________________________________________________________||
 class SMSMass(object):
     def begin(self, event):
 
@@ -13,7 +31,7 @@ class SMSMass(object):
             'SMS_T2qq': ('GenSusyMSquark', 'GenSusyMNeutralino'),
         }
 
-        smsname =  '_'.join(event.component.name.split('_')[0:2])
+        smsname =  '_'.join(event.componentName[0].split('_')[0:2])
         # e.g., 'SMS_T1tttt'
 
         self.sms = smsname in massdict
