@@ -1,7 +1,16 @@
 # xi-roc-cafe
-an example analysis code with alphatwirl and data frames
+an example analysis code with [alphatwirl](https://github.com/alphatwirl/alphatwirl) and data frames
 
-## a quick example
+- the example has two steps
+  1. create data frames from ROOT Trees with alphatwirl
+     - This step creates input data frames to the 2nd step. The design of the data frames depends on what you do in the 2nd step.
+  1. analyze data frames with pandas in python
+     - This step is the main part of the analysis.
+     - The example highlightes data frame operations.
+       - _general_: the [code](aggregate) doesn’t know the names or the values of the categorical variables, or even the number of the dimensions of the categorical variables. That means that the same code will just work even if you add a new dimension in the categorization.
+       - _concise_: easy to write [vectorized code](https://en.wikipedia.org/wiki/Array_programming). never need to write “for” loops to loop over the rows of data frames. rarely need “if” statements. You won’t end up writing nested “for” loops and  “if” statements, which is error-prone, hard to understand and maintain
+
+## quick instructions
 
 ### check out
 
