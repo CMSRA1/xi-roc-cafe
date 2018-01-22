@@ -1,3 +1,9 @@
 [submodule "AlphaTwirl"]
-	path = AlphaTwirl
-	url = git@github.com:TaiSakuma/AlphaTwirl.git
+	path = external/alphatwirl
+	url = git@github.com:alphatwirl/alphatwirl.git
+[submodule "external/fwtwirl"]
+	path = external/fwtwirl
+	url = git@github.com:TaiSakuma/fwtwirl.git
+[submodule "external/scribblers"]
+	path = external/scribblers
+	url = git@github.com:TaiSakuma/scribblers.git
