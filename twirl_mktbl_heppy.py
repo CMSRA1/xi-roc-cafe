@@ -7,7 +7,14 @@ import numpy
 import pprint
 
 ##__________________________________________________________________||
-sys.path.insert(1, os.path.join(os.path.dirname(__file__), 'AlphaTwirl'))
+scripts_dir = os.path.dirname(__file__)
+external_dir = os.path.join(scripts_dir, 'external')
+sys.path.insert(1, scripts_dir)
+sys.path.insert(1, external_dir)
+sys.path.insert(1, os.path.join(external_dir, 'alphatwirl'))
+sys.path.insert(1, os.path.join(external_dir, 'scribblers'))
+
+##__________________________________________________________________||
 import alphatwirl
 import fwtwirl
 
@@ -138,35 +145,27 @@ def configure_1st_event_selection():
         path_cfg = path_cfg_susy_masspoints
 
     #
+    eventSelection = alphatwirl.selection.build_selection(
+        path_cfg = path_cfg,
+        AllClass = alphatwirl.selection.modules.AllwCount,
+        AnyClass = alphatwirl.selection.modules.AnywCount,
+        NotClass = alphatwirl.selection.modules.NotwCount
+    )
+
     eventselection_path = os.path.join(args.outdir, 'eventselection.txt')
     if args.force or not os.path.exists(eventselection_path):
         alphatwirl.mkdir_p(os.path.dirname(eventselection_path))
         with open(eventselection_path, 'w') as f:
             pprint.pprint(path_cfg, stream = f)
 
-    #
     tbl_cutflow_path = os.path.join(args.outdir, 'tbl_cutflow.txt')
-    if args.force or not os.path.exists(tbl_cutflow_path):
-        eventSelection = alphatwirl.selection.build_selection(
-            path_cfg = path_cfg,
-            AllClass = alphatwirl.selection.modules.AllwCount,
-            AnyClass = alphatwirl.selection.modules.AnywCount,
-            NotClass = alphatwirl.selection.modules.NotwCount
-        )
-        resultsCombinationMethod = alphatwirl.collector.CombineIntoList(
-            summaryColumnNames = ('depth', 'class', 'name', 'pass', 'total'),
-            sort = False,
-            summarizer_to_tuple_list = summarizer_to_tuple_list
-        )
-        deliveryMethod = alphatwirl.collector.WriteListToFile(tbl_cutflow_path)
-        collector = alphatwirl.loop.Collector(resultsCombinationMethod, deliveryMethod)
-    else:
-        eventSelection = alphatwirl.selection.build_selection(
-            path_cfg = path_cfg
-        )
-        collector = alphatwirl.loop.NullCollector()
 
-    #
+    resultsCombinationMethod = alphatwirl.collector.ToTupleListWithDatasetColumn(
+        summaryColumnNames = ('depth', 'class', 'name', 'pass', 'total')
+    )
+    deliveryMethod = alphatwirl.collector.WriteListToFile(tbl_cutflow_path)
+    collector = alphatwirl.loop.Collector(resultsCombinationMethod, deliveryMethod)
+
     ret = [(eventSelection, collector)]
     return ret
 
@@ -205,16 +204,13 @@ def configure_tables_after_1st_event_selection():
             if 'keyIndices' in c: c['keyIndices'] = (None, None) + c['keyIndices']
             c['keyOutColumnNames'] = ('smsmass1', 'smsmass2') + keyOutColumnNames
 
-    #
     tableConfigCompleter = alphatwirl.configure.TableConfigCompleter(
         defaultSummaryClass = alphatwirl.summary.Count,
         defaultOutDir = args.outdir,
-        createOutFileName = alphatwirl.configure.TableFileNameComposer2()
-        )
+        createOutFileName = alphatwirl.configure.TableFileNameComposer(default_prefix = 'tbl_n.component')
+    )
 
     tblcfg = [tableConfigCompleter.complete(c) for c in tblcfg]
-
-    #
     if not args.force:
         tblcfg = [c for c in tblcfg if c['outFile'] and not os.path.exists(c['outFilePath'])]
 
