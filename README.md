@@ -36,15 +36,7 @@ cd ../../
 
 Check out this repo:
 ```bash
-git clone git@github.com:CMSRA1/xi-roc-cafe.git
-```
-
-Check out submodules:
-```bash
-cd xi-roc-cafe
-git submodule init
-git submodule update
-cd ..
+git clone --recursive git@github.com:CMSRA1/xi-roc-cafe.git
 ```
 
 ### run
